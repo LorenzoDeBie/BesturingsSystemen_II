@@ -11,5 +11,7 @@
 	gcc -o ./bin/4 4.c
 5: 5.c
 	gcc -o ./bin/5 5.c
+6: 6.c
+	gcc -o ./bin/6 6.c
 clean:
 	rm ./bin/*
