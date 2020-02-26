@@ -13,5 +13,7 @@
 	gcc -o ./bin/5 5.c
 6: 6.c
 	gcc -o ./bin/6 6.c
+watchfile: watchfile.c
+	gcc -o ./bin/watchfile watchfile.c
 clean:
 	rm ./bin/*
