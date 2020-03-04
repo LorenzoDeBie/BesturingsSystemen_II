@@ -8,7 +8,7 @@
             "name": "gcc build and debug active file",
             "type": "cppdbg",
             "request": "launch",
-            "program": "./bin/watchfile",
+            "program": "${cwd}/bin/watchfile",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${cwd}",

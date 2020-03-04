@@ -7,7 +7,6 @@
 #include <time.h>
 
 int main(int argc, char **argv) {
-	//cp src dest
 	//give error when src or dest is not a file
 	if(argc != 2) {
 		printf("usage: watchfile path\n");
@@ -31,16 +30,19 @@ int main(int argc, char **argv) {
 		exit(1);
 	}
 	//all files are opened
-	int aantal;
-	char buffer[BUFSIZ];
-	int lastEdit = st.st_mtime;
+	long lastEdit = st.st_mtime;
+	printf("lastEdit = %d\n", lastEdit);
 	while(1) {
-		fstat(src, &st);
-		//printf("old: %d; current: %d\n", lastEdit, st.st_mtim.tv_sec);
-		if(lastEdit < st.st_mtime) {
-			printf("file has changed!\n");
-			lastEdit = st.st_mtime;
+		if(stat(argv[1], &st) == 0) {
+			if(lastEdit != st.st_mtime) {
+				printf("file has changed!\n");
+				lastEdit = st.st_mtime;
+			}
+		}
+		else {
+			perror(argv[1]);
+			sleep(5);
 		}
 	}
-	return 0;
+	return 1;
 }	
