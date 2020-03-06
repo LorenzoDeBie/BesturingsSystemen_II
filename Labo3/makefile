@@ -8,3 +8,7 @@
 	gcc -o ./bin/3.2 3.2.c
 writestring: writestring.c
 	gcc -o ./bin/writestring writestring.c
+watchfile: watchfile.c
+	gcc -o ./bin/watchfile watchfile.c
+watchfiled: watchfiled.cc
+	g++ -o ./bin/watchfiled watchfiled.cc
