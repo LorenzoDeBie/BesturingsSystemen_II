@@ -3,6 +3,14 @@
 ## Table of Contents
 [4.1 Running Any Executable](#41-running-any-executable)  
 [4.2 Running Several Commands in Sequence](#42-running-several-commands-in-sequence)  
+[4.3 Running Several Commands All at Once](#43-running-several-commands-all-at-once)  
+[4.4 Telling Whether a Command Succeeded or Not](#44-telling-whether-a-command-succeeded-or-not)  
+[4.5 Running a Command Only if Another Command Succeeded](#45-running-a-command-only-if-another-command-succeeded)  
+[4.6 Using Fewer if Statements](#46-using-fewer-if-statements)  
+[4.7 Running Long Jobs Unattended](#47-running-long-jobs-unattended)  
+[4.8 Displaying Error Messages When Failures Occur](#48-displaying-error-messages-when-failures-occur)  
+[4.9 Running Commands from a Variable](#49-running-commands-from-a-variable)  
+[4.10 Running All Scripts in a Directory](#410-running-all-scripts-in-a-directory)  
 
 ## 4.1 Running Any Executable
 * type in the thame of the command and hit enter
