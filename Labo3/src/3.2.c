@@ -1,3 +1,7 @@
+//
+// Created by lorenzodb on 05/04/2020.
+//
+
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdio.h>
@@ -15,7 +19,7 @@ int main(int argc, char** argv) {
     for(i; i < AANTAL; i++) {
         pids[i] = fork();
         if(!pids[i]) {
-            execle("./bin/writestring", "writestring", "hello", (char*) 0, newenv);
+            execle("./writestring", "writestring", "hello", (char*) 0, newenv);
             perror("execle");
             exit(1);
         }
