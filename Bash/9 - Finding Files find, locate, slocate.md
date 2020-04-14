@@ -10,7 +10,8 @@
 [9.7 Finding Files by Type](#97-finding-files-by-type)  
 [9.8 Finding Files by Size](#98-finding-files-by-size)  
 [9.9 Finding Files by Content](#99-finding-files-by-content)  
-[9.10 Finding Existing Files and Content Fast](#910-finding-existing-files-and-content-fast)  
+[9.10 Finding Existing Files and Content Fast](#910-finding-existing-files-and-content-fast) 
+[9.11 Finding a File Using a List of Possible Locations](#911-finding-a-file-using-a-list-of-possible-locations) 
 
 ## 9.1 Finding All Your MP3 Files
 * `find `*`path`*` -name '`*`pattern`*`'`
@@ -71,3 +72,16 @@
 ## 9.10 Finding Existing Files and Content Fast
 > [gotta go fast](https://www.youtube.com/watch?v=VTHsOSGJHN0)
 * `locate` or `slocate`: [see CH1.5](1%20-%20Beginning%20Bash.md#15-finding-and-running-commands)
+
+## 9.11 Finding a File Using a List of Possible Locations
+```bash
+for file in list; do
+  [ -f "$file" ] && YOUR_COMMANDS_HERE
+done
+```
+* search in `PATH` : use `${VAR/PATTERN/REPLACEMENT}` substitution operator
+```bash
+for path in ${PATH//:/ }; do
+  YOUR COMMANDS_HERE
+done
+```
