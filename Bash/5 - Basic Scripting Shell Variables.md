@@ -1,7 +1,23 @@
 >Lorenzo De Bie
 # 5 Basic Scripting: Shell Variables
 ## Table of Contents
-
+[5.1 Documenting Your Script](#51-documenting-your-script)  
+[5.4 Seperating Variable Names from Surrounding Text](#54-seperating-variable-names-from-surrounding-text)  
+[5.5 Exporting Variables](#55-exporting-variables)  
+[5.6 Seeing All Variable Values](#56-seeing-all-variable-values)  
+[5.7 Using Parameters in a Shell Script](#57-using-parameters-in-a-shell-script)  
+[5.8 Looping Over Argument Pased to a Script](#58-looping-over-argument-pased-to-a-script)  
+[5.9 Handling Parameters with Spaces](#59-handling-parameters-with-spaces)  
+[5.10 Handling Lists of Parameters with Spaces](#510-handling-lists-of-parameters-with-spaces)  
+[5.11 Counting Arguments](#511-counting-arguments)  
+[5.12 Consuming Arguments](#512-consuming-arguments)  
+[5.13 Getting Default Values](#513-getting-default-values)  
+[5.14 Setting Default Values](#514-setting-default-values)  
+[5.15 Using null as a Valid Default Value](#515-using-null-as-a-valid-default-value)  
+[5.16 Using More than Just a Constant String for Default](#516-using-more-than-just-a-constant-string-for-default)  
+[5.17 Giving an Error Message for Unset Parameters](#517-giving-an-error-message-for-unset-parameters)  
+[5.18 Changing Pieces of a String](#518-changing-pieces-of-a-string)  
+[5.19 Getting the Absolute Value of a Number](#519-getting-the-absolute-value-of-a-number)  
 
 ## 5.1 Documenting Your Script
 * `# this is a comment`
