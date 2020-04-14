@@ -22,12 +22,13 @@ int main(int argc, char **argv) {
 		printf("%s is a directory!\n", argv[1]);
 		exit(1);
 	}
-	//check dest file
-	if(stat(argv[2], &st)==0) {
+    struct stat st2;
+    //check dest file
+	if(stat(argv[2], &st2)==0) {
 		printf("%s already exists!\n", argv[2]);
 		exit(1);
 	}
-	if(S_ISDIR(st.st_mode)) {
+	if(S_ISDIR(st2.st_mode)) {
 		printf("%s is a directory!\n", argv[2]);
 		exit(1);
 	}
@@ -38,7 +39,7 @@ int main(int argc, char **argv) {
 		perror(argv[1]);
 		exit(1);
 	}
-	int dest = open(argv[2], O_WRONLY|O_CREAT);
+	int dest = open(argv[2], O_WRONLY|O_CREAT, st.st_mode);
 	if(dest < 0) {
 		perror(argv[2]);
 		exit(1);
