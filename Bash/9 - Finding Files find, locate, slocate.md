@@ -2,6 +2,15 @@
 # 9 Finding Files: find, locate, slocate
 ## Table of Contents
 [9.1 Finding All Your MP3 Files](#91-finding-all-your-mp3-files)  
+[9.2 Handling Filename Containing Odd Characters](#92-handling-filename-containing-odd-characters)  
+[9.3 Speeding Up Operations on Found Files](#93-speeding-up-operations-on-found-files)  
+[9.4 Finding Files Across Symbolic Links](#94-finding-files-across-symbolic-links)  
+[9.5 Finding Files Irrespective of Case](#95-finding-files-irrespective-of-case)  
+[9.6 Finding Files by Date](#96-finding-files-by-date)  
+[9.7 Finding Files by Type](#97-finding-files-by-type)  
+[9.8 Finding Files by Size](#98-finding-files-by-size)  
+[9.9 Finding Files by Content](#99-finding-files-by-content)  
+[9.10 Finding Existing Files and Content Fast](#910-finding-existing-files-and-content-fast)  
 
 ## 9.1 Finding All Your MP3 Files
 * `find `*`path`*` -name '`*`pattern`*`'`
