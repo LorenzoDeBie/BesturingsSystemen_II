@@ -39,7 +39,7 @@
 ## 5.7 Using Parameters in a Shell Script
 * `${`*`number`*`}` : each parameter passed to a script is available using this syntax
 
-## 5.8 Looping Over Argument Pased to a Script
+## 5.8 Looping Over Arguments Passed to a Script
 * `$*` : a list containing all script parameters
   * looping over this list:  
     ``` bash
