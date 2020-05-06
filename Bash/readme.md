@@ -1,0 +1,2 @@
+This folder contains exercices of the [bash cookbook 2nd edition](https://www.amazon.de/bash-Cookbook-Solutions-Examples-Users/dp/1491975334/) (ISBN: 978-1-491-97533-6)  
+each folder contains the exercises of the corresponding chapter

@@ -205,4 +205,36 @@ fi
   [:blank:] # spaces or tabs`
   ```
     * grouping is done by placing pattern inside `()`
-    * repetitions are done by placing pattern inside `[]` followed by modifier  
+    * repetitions are done by placing pattern inside `[]` followed by a modifier like `*` or `+`  
+
+## 6.10 Looping for a While
+* arithmetic condition:
+  ```bash
+  while (( COUNT < MAX ))
+  do
+    # do operations here
+  done
+  ```
+* filesystem-related conditions:
+  ```bash
+  while [ -z "$LOCKFILE" ]
+  do
+    # do operations here
+  done
+  ```
+* reading input
+  ```bash
+  # reads from stdin
+  while read lineoftext
+  do
+   # process $lineoftext
+  done
+
+  # reads from file
+  while read lineoftext
+  do
+   # process $lineoftext
+  done < input.file
+  ```
+
+## 6.11 Loopin with a read
