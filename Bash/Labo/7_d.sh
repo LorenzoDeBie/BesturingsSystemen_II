@@ -15,7 +15,7 @@ exit_handler(){
 	done | sort -rn -k 1,1| head -n 10
 
 	# end line with summarized data
-	echo $(( (count*100) / total )).$(( ((count*1000) / total) % 10 ))% complete
+	echo $(( count*100 / total )).$(( count*1000 / total % 10))% complete
 	# clean up the tmp directory
 	rm -rf $2
 
