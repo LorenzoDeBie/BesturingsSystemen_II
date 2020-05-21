@@ -91,7 +91,7 @@ if (( rejectedFlag )); then
     printf "$denied hosts were denied an IP adress\n"
 fi
 if (( nightFlag )); then
-    printf "These hosts renewed their lease between 9pm and 4 am"
+    printf "These hosts renewed their lease between 9pm and 4 am\n"
     # loop over all the dates
     for date in "${!renewed[@]}" ; do
         # show the date
