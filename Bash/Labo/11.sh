@@ -7,6 +7,7 @@ night=0
 # default file= dchp.log, can be overridden with -f filename
 file="dhcp.log"
 
+# see bash cookbook 13.1 && 13.2: Parsing arguments
 while getopts ':srnf:' option ; do
     case "$option" in
         s)  success=1
