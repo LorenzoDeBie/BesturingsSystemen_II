@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.15)
-project(Labo5 C)
+project(POSIX-threads)
 
 set(CMAKE_C_STANDARD 90)
 
