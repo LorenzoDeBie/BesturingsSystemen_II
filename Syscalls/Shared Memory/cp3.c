@@ -45,7 +45,7 @@ int main(int argc, char** argv) {
 	// option 2: ftruncate = a lot cleaner
 	ftruncate(fd_out, st.st_size);
 
-	int total = 0, cpysz, total=0;
+	int total = 0, cpysz;
 	while (total < st.st_size) {
 		if(total < st.st_size - N * size) cpysz = N * size;
 		else cpysz = st.st_size - total;
@@ -65,7 +65,7 @@ int main(int argc, char** argv) {
 			munmap(in, cpysz);
 			return 1;
 		}
-		memcpy(out,in, cpsz);
+		memcpy(out,in, cpysz);
 		munmap(in, cpysz);
 		munmap(out, cpysz);
 		total += cpysz;
